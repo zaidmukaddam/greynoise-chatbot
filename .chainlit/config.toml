@@ -1,0 +1,87 @@
+[project]
+# Whether to enable telemetry (default: true). No personal data is collected.
+enable_telemetry = false
+
+# List of environment variables to be provided by each user to use the app.
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+session_timeout = 3600
+
+# Enable third parties caching (e.g LangChain cache)
+cache = false
+
+# Follow symlink for asset mount (see https://github.com/Chainlit/chainlit/issues/317)
+# follow_symlink = false
+
+[features]
+# Show the prompt playground
+prompt_playground = false
+
+# Process and display HTML in messages. This can be a security risk (see https://stackoverflow.com/questions/19603097/why-is-it-dangerous-to-render-user-generated-html-or-javascript)
+unsafe_allow_html = true
+
+# Process and display mathematical expressions. This can clash with "$" characters in messages.
+latex = true
+
+# Authorize users to upload files with messages
+multi_modal = false
+
+# Allows user to use speech to text
+[features.speech_to_text]
+    enabled = false
+    # See all languages here https://github.com/JamesBrill/react-speech-recognition/blob/HEAD/docs/API.md#language-string
+    # language = "en-US"
+
+[UI]
+# Name of the app and chatbot.
+name = "GreyNoise AI Chatbot"
+
+# Show the readme while the conversation is empty.
+show_readme_as_default = true
+
+# Description of the app and chatbot. This is used for HTML tags.
+# description = "A chatbot powered by GreyNoise AI and GPT-4 Turbo X Function Calling"
+
+# Large size content are by default collapsed for a cleaner ui
+default_collapse_content = false
+
+# The default value for the expand messages settings.
+default_expand_messages = true
+
+# Hide the chain of thought details from the user in the UI.
+hide_cot = false
+
+# Link to your github repo. This will add a github button in the UI's header.
+# github = "httpss://github.com/zaidmukaddam/greynoise-chatbot"
+
+# Specify a CSS file that can be used to customize the user interface.
+# The CSS file can be served from the public directory or via an external link.
+# custom_css = "/public/test.css"
+
+# Override default MUI light theme. (Check theme.ts)
+[UI.theme.light]
+    #background = "#FAFAFA" # A light grey for a subtle, clean background
+    #paper = "#FFFFFF" # Pure white for paper elements, providing more contrast against the light background
+
+    [UI.theme.light.primary]
+        #main = "#FFA726" # The orange color taken from the button for primary elements
+        #dark = "#C77800" # A darker shade of the primary color for dark variant
+        #light = "#FFD95B" # A lighter shade of the primary color for light variant
+
+    [UI.theme.light.text]
+        #primary = "#212121" # A dark grey or black for primary text for readability
+        #secondary = "#757575" # A lighter grey for secondary text
+# Override default MUI dark theme. (Check theme.ts)
+[UI.theme.dark]
+    #background = "#0A0A0A" # Assuming the darkest area as the background color
+    #paper = "#1C1C1E" # A slightly lighter shade for paper elements
+
+    [UI.theme.dark.primary]
+        #main = "#FFA726" # The orange color taken from the button
+        #dark = "#C77800" # A darker shade of the button color for dark variant
+        #light = "#FFD95B" # A lighter shade of the button color for light variant
+
+
+[meta]
+generated_by = "0.7.700"

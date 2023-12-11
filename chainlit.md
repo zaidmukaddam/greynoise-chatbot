@@ -13,10 +13,10 @@ This chatbot is a tool to help you interact with GreyNoise data. You can use it 
 
 You can use this chatbot by typing in a command and pressing enter. The chatbot will then respond with the results of your query.
 
-## Any examples of NLP queries?
+## Any examples of queries?
 
 Sure! Here are some examples of NLP queries:
 
-- `What is the IP address of 185.220.101.57?`
+- `Get information about this IP address: 185.220.101.57`
 - `Search for malicious activity in Denmark.`
 

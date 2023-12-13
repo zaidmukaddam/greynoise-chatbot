@@ -40,6 +40,8 @@ name = "GreyNoise AI Chatbot"
 # Show the readme while the conversation is empty.
 show_readme_as_default = true
 
+github="https://github.com/zaidmukaddam/greynoise-chatbot"
+
 # Description of the app and chatbot. This is used for HTML tags.
 # description = "A chatbot powered by GreyNoise AI and GPT-4 Turbo X Function Calling"
 
